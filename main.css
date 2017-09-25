@@ -9,7 +9,6 @@
 	[class*="col-"] {
 	    float: left;
 	    padding: 15px;
-	    border: 1px solid red;
 	}
 	.col-1 { width: 8.33%; }
 	.col-2 { width: 16.66%; }
@@ -24,20 +23,53 @@
 	.col-11 { width: 91.66%; }
 	.col-12 { width: 100%; }
 
-	/* Style HTML5 elements */
-	body {
-		margin: 0px;
-		padding: 0px;
-	}
-	header {
-		border: 1px #000 solid;
-		height: 5vh;
-	}
-	main {
-		border: 1px #000 solid;
-		height: 90vh;
-	}
-	footer {
-		border: 1px #000 solid;
-		height: 5vh;
-	}
+/* Style HTML5 elements */
+body {
+	margin: 0px;
+	padding: 0px;
+}
+header {
+	border: 1px #000 solid;
+	height: 100vh;
+	width:100%;
+	background: url("leidensunset.jpg") no-repeat center center;
+	background-size: cover;
+}
+nav{
+	background: #333;
+	height: 4vh;
+	width: 100%;
+}
+header article{
+	background-color: rgba(0,0,0,0.41);
+	position: absolute;
+	top: 35%;
+	color: #fff;
+	text-align: center;
+	font-family: 'Cinzel', serif;
+	font-weight: 200;
+	font-style: normal;
+}
+
+header article h1{
+	font-size: 400%;
+}
+header article  p{
+	font-size: 200%;
+	text-shadow: 10px black;
+}
+ul{
+	list-style-type: none;
+	float: right;
+}
+li{
+	display: inline;
+}
+
+/*footer {
+	background-color: #333;
+	height: 10vh;
+	position: fixed;
+	bottom: 0%;
+	width: 100%;
+}*/
