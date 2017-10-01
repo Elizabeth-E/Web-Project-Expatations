@@ -1,5 +1,6 @@
 /* Create Bootrap-like grid */
 	* { box-sizing: border-box; }
+	.row { border: 2px solid #000; }
 	.row::after {
 	    content: "";
 	    clear: both;
@@ -9,6 +10,7 @@
 	[class*="col-"] {
 	    float: left;
 	    padding: 15px;
+		border: 1px dashed blue;
 	}
 	.col-1 { width: 8.33%; }
 	.col-2 { width: 16.66%; }
@@ -28,12 +30,23 @@ body {
 	margin: 0px;
 	padding: 0px;
 }
+main {
+	position: relative;
+}
+main img.footer {
+	position: absolute;
+    left: 0;
+    bottom: 0;
+}
 header {
 	border: 1px #000 solid;
 	height: 100vh;
 	width:100%;
 	background: url("../img/leidensunset.jpg") no-repeat center center;
 	background-size: cover;
+}
+footer {
+	background-color: #8a8a8a;
 }
 
 nav{
@@ -44,7 +57,7 @@ nav{
 }
 
 header article{
-	background-color: rgba(0,0,0,0.41);
+	background-color: rgba(0,0,0,0.60);
 	position: absolute;
 	top: 35%;
 	color: #fff;
@@ -55,16 +68,19 @@ header article{
 }
 
 header article h1{
-	font-size: 400%;
+	font-size: 600%;
+	text-shadow: 2px 2px #7081a9;
+	margin-bottom: 5px;
 }
 hr{
-	background-color: #f2c977;
-	height: 3px;
-	max-width: 40%;
+	background-color: #f0a26d;
+    height: 2px;
+    max-width: 40%;
+    border: none;
 }
 header article  p{
 	font-size: 200%;
-	text-shadow: 10px black;
+	text-shadow: 1px 1px #7081a9;
 }
 #logo{
 	position: absolute;
@@ -104,25 +120,12 @@ button {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    border-radius: 300px;
+    border-radius: 10px;
     font-weight: 700;
     text-transform: uppercase;
 }
-.button:hover{
-	background-color: #f0a26d;
-}
+.button:hover{background-color: #f0a26d;}
 .intro-blocks{
-	background-color: #7081a9;
-	border: solid black;
+	background-color: #fff;
 	text-align: center;
 }
-
-
-
-/*footer {
-	background-color: #333;
-	height: 10vh;
-	position: fixed;
-	bottom: 0%;
-	width: 100%;
-}*/
