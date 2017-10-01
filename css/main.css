@@ -37,7 +37,7 @@ header {
 }
 
 nav{
-	background-color: rgba(0,0,0,0.21); /*rgba(112,129,169,0.61);*/
+	background-color: rgba(0,0,0,0.75);
 	height: 8vh;
 	width: 100%;
 
@@ -84,14 +84,17 @@ ul{
 li{
 	list-style-type: none;
 	font-size: 25px;
-	color: #DBDDDF;
 	display: inline;
-	border-left: 2px solid #000;
 	padding-left: 10px;
 	padding-right: 10px;
-
-
 }
+li a {
+	color: #DBDDDF;
+	text-decoration: none;
+} li a:hover {
+	color: #f0a26d;
+}
+
 button {
     background-color: #1e6fa5;
     border: none;
