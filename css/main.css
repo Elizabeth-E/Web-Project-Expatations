@@ -1,0 +1,125 @@
+/* Create Bootrap-like grid */
+	* { box-sizing: border-box; }
+	.row::after {
+	    content: "";
+	    clear: both;
+	    display: table;
+	}
+
+	[class*="col-"] {
+	    float: left;
+	    padding: 15px;
+	}
+	.col-1 { width: 8.33%; }
+	.col-2 { width: 16.66%; }
+	.col-3 { width: 25%; }
+	.col-4 { width: 33.33%; }
+	.col-5 { width: 41.66%; }
+	.col-6 { width: 50%; }
+	.col-7 { width: 58.33%; }
+	.col-8 { width: 66.66%; }
+	.col-9 { width: 75%; }
+	.col-10 { width: 83.33%; }
+	.col-11 { width: 91.66%; }
+	.col-12 { width: 100%; }
+
+/* Style HTML5 elements */
+body {
+	margin: 0px;
+	padding: 0px;
+}
+header {
+	border: 1px #000 solid;
+	height: 100vh;
+	width:100%;
+	background: url("../img/leidensunset.jpg") no-repeat center center;
+	background-size: cover;
+}
+
+nav{
+	background-color: rgba(0,0,0,0.21); /*rgba(112,129,169,0.61);*/
+	height: 8vh;
+	width: 100%;
+
+}
+
+header article{
+	background-color: rgba(0,0,0,0.41);
+	position: absolute;
+	top: 35%;
+	color: #fff;
+	text-align: center;
+	font-family: 'Cinzel', serif;
+	font-weight: 200;
+	font-style: normal;
+}
+
+header article h1{
+	font-size: 400%;
+}
+hr{
+	background-color: #f2c977;
+	height: 3px;
+	max-width: 40%;
+}
+header article  p{
+	font-size: 200%;
+	text-shadow: 10px black;
+}
+#logo{
+	position: absolute;
+	left: 0;
+	top: 0;
+	margin: 0px;
+	padding: 0px;
+	height: 10%;
+	width: 10%;
+}
+ul{
+	list-style-type: none;
+	float: right;
+	margin: 10px;
+	padding: 10px;
+}
+li{
+	list-style-type: none;
+	font-size: 25px;
+	color: #DBDDDF;
+	display: inline;
+	border-left: 2px solid #000;
+	padding-left: 10px;
+	padding-right: 10px;
+
+
+}
+button {
+    background-color: #1e6fa5;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 300px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.button:hover{
+	background-color: #f0a26d;
+}
+.intro-blocks{
+	background-color: #7081a9;
+	border: solid black;
+	text-align: center;
+}
+
+
+
+/*footer {
+	background-color: #333;
+	height: 10vh;
+	position: fixed;
+	bottom: 0%;
+	width: 100%;
+}*/
