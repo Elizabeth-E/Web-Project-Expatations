@@ -1,6 +1,6 @@
 /* Create Bootrap-like grid */
 	* { box-sizing: border-box; }
-	.row { border: 2px solid #000; }
+	/*.row { border: 2px solid #000; }*/
 	.row::after {
 	    content: "";
 	    clear: both;
@@ -10,7 +10,7 @@
 	[class*="col-"] {
 	    float: left;
 	    padding: 15px;
-		border: 1px dashed blue;
+		/*border: 1px dashed blue;*/
 	}
 	.col-1 { width: 8.33%; }
 	.col-2 { width: 16.66%; }
@@ -30,13 +30,13 @@ body {
 	margin: 0px;
 	padding: 0px;
 }
-main {
+section.main {
 	position: relative;
 }
-main img.footer {
+section.main img.footer {
 	position: absolute;
-    left: 0;
-    bottom: 0;
+    left: 0px;
+    bottom: -2px;
 }
 header {
 	border: 1px #000 solid;
@@ -47,6 +47,11 @@ header {
 }
 footer {
 	background-color: #8a8a8a;
+	height: 5vh;
+}
+footer p{
+	margin: 0;
+	padding: 0;
 }
 
 nav{
@@ -126,6 +131,31 @@ button {
 }
 .button:hover{background-color: #f0a26d;}
 .intro-blocks{
+	font-family: century, sans-serif;
+	font-size: 20px;
 	background-color: #fff;
 	text-align: center;
+
+}
+.intro-blocks1{
+	font-family: century, sans-serif;
+	font-size: 20px;
+	background-color: #fff;
+	text-align: center;
+
+}
+.intro{
+	text-align: center;
+}
+.blockimg{
+	width: 100%;
+	height: auto;
+	max-height: 200px;
+}
+
+p.homepage {
+	text-align: left;
+}
+section.bottom{
+	margin-bottom: 10%;
 }
