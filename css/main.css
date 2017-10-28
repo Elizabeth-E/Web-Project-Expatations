@@ -54,13 +54,43 @@ footer p{
 }
 
 nav{
-	background-color: #1e6fa5;
-	height: 8vh;
-	width: 100%;
-	padding: 10px;
-
+    background-color: #1e6fa5;
+    min-height: 8vh;
+    width: 100%;
 }
 
+nav ul{
+    list-style-type: none;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 4vh;
+}
+nav ul li{
+    list-style-type: none;
+    font-size: 25px;
+    display: inline;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+nav ul li.active{
+    border: #f0a26d 1px solid;
+}
+nav ul li a {
+    color: #DBDDDF;
+    text-decoration: none;
+} nav li a:hover {
+    color: #f0a26d;
+}
+#logo{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	margin: 0px;
+	padding: 0px;
+	height: 10%;
+	width: 10%;
+
+}
 header article{
 	background-color: rgba(0,0,0,0.60);
 	position: absolute;
@@ -86,35 +116,6 @@ hr{
 header article  p{
 	font-size: 200%;
 	text-shadow: 1px 1px #7081a9;
-}
-#logo{
-	position: absolute;
-	left: 0;
-	bottom: 0;
-	margin: 0px;
-	padding: 0px;
-	height: 10%;
-	width: 10%;
-
-}
-ul{
-	list-style-type: none;
-	margin: 0px;
-	padding: 10px;
-	text-align: center;
-}
-li{
-	list-style-type: none;
-	font-size: 25px;
-	display: inline;
-	padding-left: 10px;
-	padding-right: 10px;
-}
-li a {
-	color: #DBDDDF;
-	text-decoration: none;
-} li a:hover {
-	color: #f0a26d;
 }
 
 button {
